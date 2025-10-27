@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Partner Dashboard</title>
+  <link rel="stylesheet" href="Portal_Admin_Access.css"/>
+  <script src="Portal_Admin_Access.js"></script>
+</head>
+<body>
+  <!-- Fixed Top Navbar -->
+  <div class="navbar">
+    <div class="logo">
+        Partner Portal
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-target="redeem">Redeem Voucher</button>
+      <button class="tab" data-target="reports">Reports</button>
+      <button class="tab" data-target="users">Users</button>
+      <button class="tab" data-target="profile">Profile Update</button>
+    </div>
+  </div>
+
+  <!-- Main Content Area -->
+    <div class="navbar">
+    <div class="logo" style="vertical-align: middle;">
+        <img src="Image_Resource/TLCLogo.png" alt="" style="width: 75px; height: auto; background-color: white; vertical-align: middle;">
+            Partner Portal
+    </div>
+    <div class="tabs">
+      <button class="tab active" data-target="redeem">Redeem Voucher</button>
+      <button class="tab" data-target="reports">Reports</button>
+      <button class="tab" data-target="users">Users</button>
+      <button class="tab" data-target="profile">Profile Update</button>
+    </div>
+  </div>
+
+  <div class="content">
+    <section id="redeem" class="tab-content active">
+      <h2>Redeem Voucher</h2>
+      <form id="redeemForm" class="redeem-form">
+        <div class="form-group">
+          <label for="customerName">Customer Name</label>
+          <input type="text" id="customerName" name="customerName" placeholder="Enter customer name" required />
+        </div>
+        <div class="form-group">
+          <label for="customerEmail">Customer Email</label>
+          <input type="email" id="customerEmail" name="customerEmail" placeholder="Enter customer email" required />
+        </div>
+        <div class="form-group">
+          <label for="voucherCode">Voucher Code</label>
+          <input type="text" id="voucherCode" name="voucherCode" placeholder="Enter voucher code" required />
+        </div>
+        <button type="submit">Redeem</button>
+        <p id="redeemMessage" class="form-message"></p>
+      </form>
+    </section>
+
+    <section id="reports" class="tab-content">
+      <h2>Reports</h2>
+      <p>Access and download your usage and redemption reports here.</p>
+    </section>
+
+    <section id="users" class="tab-content">
+      <h2>Users</h2>
+      <p>Manage associated users for your partner account.</p>
+    </section>
+
+    <section id="profile" class="tab-content">
+      <h2>Profile Update</h2>
+      <p>Update your partner profile and contact information.</p>
+    </section>
+  </div>
+
+</body>
+</html>

@@ -1,0 +1,131 @@
+/* Reset and base */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  background: linear-gradient(to bottom,  #0042b4, #ff9d00);
+  padding-top: 60px; /* Reserve space for fixed navbar */
+}
+
+/* Navbar */
+.navbar {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #0044a3;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 10px 20px;
+  z-index: 1000;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+}
+
+.logo {
+  font-weight: bold;
+  font-size: 18px;
+}
+
+.tabs {
+  display: flex;
+  gap: 12px;
+}
+
+.tab {
+  background: none;
+  border: none;
+  color: #f5f6fa;
+  padding: 10px 14px;
+  cursor: pointer;
+  font-size: 15px;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.tab:hover,
+.tab.active {
+  border-bottom: 2px solid #00a8ff;
+  color: #ff8800;
+}
+
+/* Content Sections */
+.content {
+  padding: 30px 20px;
+}
+
+.tab-content {
+  display: none;
+}
+
+.tab-content.active {
+  display: block;
+}
+
+#redeem {
+  min-height: calc(100vh - 60px);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #f5f6fa;
+}
+
+h2 {
+  margin-bottom: 10px;
+}
+
+.redeem-form {
+  max-width: 500px;
+  background: white;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 1px 8px rgba(0, 0, 0, 0.1);
+}
+
+.redeem-form .form-group {
+  margin-bottom: 15px;
+}
+
+.redeem-form label {
+  display: block;
+  margin-bottom: 6px;
+  font-weight: 600;
+  color: #333;
+}
+
+.redeem-form input {
+  width: 100%;
+  padding: 10px;
+  font-size: 15px;
+  border: 1px solid #ccc;
+  border-radius: 8px;
+}
+
+.redeem-form button {
+  width: 100%;
+  padding: 12px;
+  background-color: #00a8ff;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.redeem-form button:hover {
+  background-color: #007acc;
+}
+
+.form-message {
+  margin-top: 10px;
+  font-size: 14px;
+  text-align: center;
+  color: green;
+}

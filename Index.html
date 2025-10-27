@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Partner Redemption Login</title>
+  <link rel="stylesheet" href="PartnerPortalLoginStyle.css" />
+  <script src="PortalLoginScript.js"></script>
+</head>
+<body>
+  <div class="login-container">
+    <div class="login-box">
+      <h2>
+        <img src="../Image_Resource/TLCLogo.png" alt="TLC Worldwide Logo" style="width: 250px; height: 250px">
+        </br> Partner Portal
+      </h2>
+      <form id="loginForm">
+        <div class="form-group">
+          <label for="email">Username</label>
+          <input type="email" id="email" name="email" placeholder="Enter your email" required />
+        </div>
+        <div class="form-group">
+          <label for="password">Password</label>
+          <input type="password" id="password" name="password" placeholder="Enter your password" required />
+        </div>
+        <button type="submit">Login</button>
+        <p class="error-message" id="errorMessage"></p>
+        <p class="success-message" id="successMessage"></p>
+      </form>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
